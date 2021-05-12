@@ -11,7 +11,7 @@ import SwiftUI
 struct DayNightToggleApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            MoonToggleView()
         }
     }
 }

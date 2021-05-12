@@ -8,18 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		E2193B06264C8B8000AB1A8E /* DayNightToggleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2193B05264C8B8000AB1A8E /* DayNightToggleApp.swift */; };
-		E2193B08264C8B8000AB1A8E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2193B07264C8B8000AB1A8E /* ContentView.swift */; };
+		E2193B08264C8B8000AB1A8E /* MoonToggleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2193B07264C8B8000AB1A8E /* MoonToggleView.swift */; };
 		E2193B0A264C8B8200AB1A8E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E2193B09264C8B8200AB1A8E /* Assets.xcassets */; };
 		E2193B0D264C8B8200AB1A8E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E2193B0C264C8B8200AB1A8E /* Preview Assets.xcassets */; };
+		E2193B18264C8C0000AB1A8E /* ColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2193B17264C8C0000AB1A8E /* ColorExtensions.swift */; };
+		E2193B1A264C8C3600AB1A8E /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2193B19264C8C3600AB1A8E /* Colors.swift */; };
+		E2193B1C264C8DE800AB1A8E /* SunView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2193B1B264C8DE800AB1A8E /* SunView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		E2193B02264C8B8000AB1A8E /* DayNightToggle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DayNightToggle.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2193B05264C8B8000AB1A8E /* DayNightToggleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayNightToggleApp.swift; sourceTree = "<group>"; };
-		E2193B07264C8B8000AB1A8E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		E2193B07264C8B8000AB1A8E /* MoonToggleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoonToggleView.swift; sourceTree = "<group>"; };
 		E2193B09264C8B8200AB1A8E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E2193B0C264C8B8200AB1A8E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		E2193B0E264C8B8200AB1A8E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E2193B17264C8C0000AB1A8E /* ColorExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtensions.swift; sourceTree = "<group>"; };
+		E2193B19264C8C3600AB1A8E /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		E2193B1B264C8DE800AB1A8E /* SunView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SunView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,7 +59,9 @@
 			isa = PBXGroup;
 			children = (
 				E2193B05264C8B8000AB1A8E /* DayNightToggleApp.swift */,
-				E2193B07264C8B8000AB1A8E /* ContentView.swift */,
+				E2193B16264C8BB300AB1A8E /* Utils */,
+				E2193B15264C8BA700AB1A8E /* Extensions */,
+				E2193B14264C8B9C00AB1A8E /* Views */,
 				E2193B09264C8B8200AB1A8E /* Assets.xcassets */,
 				E2193B0E264C8B8200AB1A8E /* Info.plist */,
 				E2193B0B264C8B8200AB1A8E /* Preview Content */,
@@ -67,6 +75,31 @@
 				E2193B0C264C8B8200AB1A8E /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		E2193B14264C8B9C00AB1A8E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E2193B07264C8B8000AB1A8E /* MoonToggleView.swift */,
+				E2193B1B264C8DE800AB1A8E /* SunView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		E2193B15264C8BA700AB1A8E /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				E2193B17264C8C0000AB1A8E /* ColorExtensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		E2193B16264C8BB300AB1A8E /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				E2193B19264C8C3600AB1A8E /* Colors.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,8 +171,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E2193B08264C8B8000AB1A8E /* ContentView.swift in Sources */,
+				E2193B08264C8B8000AB1A8E /* MoonToggleView.swift in Sources */,
+				E2193B1A264C8C3600AB1A8E /* Colors.swift in Sources */,
 				E2193B06264C8B8000AB1A8E /* DayNightToggleApp.swift in Sources */,
+				E2193B1C264C8DE800AB1A8E /* SunView.swift in Sources */,
+				E2193B18264C8C0000AB1A8E /* ColorExtensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
